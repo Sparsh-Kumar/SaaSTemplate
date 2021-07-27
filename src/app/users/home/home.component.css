@@ -1,0 +1,55 @@
+
+
+#navButton {
+    margin-left: 90%;
+}
+
+#navbarNav {
+    float: right;
+    margin-left: 70%;
+}
+
+img {
+    margin-top: 5%;
+    /*margin-left: 20%; */
+    height: 35rem;
+    width: 40rem;
+}
+
+h1 {
+    color: black;
+}
+
+hr {
+    color: black;
+}
+
+p {
+    color: black;
+    font-size: large;
+}
+
+.head {
+    margin-top: 5%;
+    margin-right: 50%;
+    margin-bottom: 10%;
+}
+
+#pricing {
+    margin-top: 5%;
+}
+
+#pricingDetails hr {
+    margin: auto;
+    margin-bottom: 3%;
+    width: 50%;
+}
+
+#pricingDetails p {
+    margin: auto;
+    width: 50%;
+}
+
+#priceDetails {
+    margin-top: 4%;
+}
