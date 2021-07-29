@@ -53,3 +53,29 @@ p {
 #priceDetails {
     margin-top: 4%;
 }
+
+#footer {
+    background-color: #152F4F;
+}
+
+#footer p {
+    color: #ffffff;
+}
+
+#footer h4 {
+    color: #ffffff;
+}
+
+#footer li {
+    list-style-type: none;
+    color: #ffffff;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#footer h2 {
+    color: #ffffff;
+}
