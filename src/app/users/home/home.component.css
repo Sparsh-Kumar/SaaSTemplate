@@ -54,6 +54,43 @@ p {
     margin-top: 4%;
 }
 
+#contact {
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 8%;
+    text-align: center;
+}
+
+#contact-head {
+    margin-bottom: 5%;
+}
+
+#contact hr {
+    margin: auto;
+    margin-bottom: 3%;
+    width: 50%;
+}
+
+#contact p {
+    margin: auto;
+    width: 50%;
+}
+
+form input {
+    margin-bottom: 3%;
+}
+
+#contact-form {
+    margin: auto;
+    width: 80%;
+}
+
+#contact-submit {
+    margin-top: 3%;
+    float: right;
+    margin-bottom: 4%;
+}
+
 #footer {
     background-color: #152F4F;
 }
