@@ -1,10 +1,36 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    
+<!-- Navigation Start -->
+<nav class="navbar navbar-expand-lg navbar-light" id="navMenu">
+    <div class="container-fluid">
+      <div class="container">
+        <a class="navbar-brand" href="#">RedCross</a>
+        <button id="navButton" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a [routerLink]="['/auth/signup']" class="nav-link active" aria-current="page" href="#">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/auth/signin']" class="nav-link active" aria-current="page" href="#">Sign In</a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="['/home/dashboard']" class="nav-link active" aria-current="page" href="#">Dashboard</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</nav>
+<!-- Navigation End -->
+
+
+<!-- Vertical Navigation -->
+<nav class="navbar navbar-expand-lg">
     <a class="navbar-brand" href="#">Vertical Navbar</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-    </button>
-  
+    </button> 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto flex-column vertical-nav">
             <li class="nav-item">
@@ -23,20 +49,20 @@
                 <a class="nav-link" href="#">Setting</a>
             </li>
         </ul>
-
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Foo</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Log Out</a>
-                </div>
-            </li>
-        </ul>
     </div>
-
 </nav>
+<!-- Vertical Navigation Ends -->
+
+<!-- Making the Divs for displaying the graphs and all -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <!-- Graph One Here -->
+            <canvas id="chart-one" width="50" height="50"></canvas>
+        </div>
+        <div class="col-md-6">
+            <!-- Graph Two Here -->
+            <canvas id="chart-two" width="50" height="50"></canvas>
+        </div>
+    </div>
+</div>
