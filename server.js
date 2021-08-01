@@ -1,5 +1,6 @@
 
 
+
 function requireHTTPS(req, res, next) {
     // The 'x-forwarded-proto' check is for Heroku
     if (!req.secure && req.get('x-forwarded-proto') !== 'https') {
@@ -14,10 +15,10 @@ const port = process.env.PORT || 8080;
 const app = express();
 
 
-app.use(express.static('../dist/rb-front'));
+app.use(express.static('./dist/rb-front'));
 app.set ('view engine', 'pug');
 app.get("*", (req, res) => {
-    res.sendFile("index.html", {root: '../dist/rb-front'});
+    res.sendFile("index.html", {root: './dist/rb-front'});
 });
 
 app.listen (port, () => {
