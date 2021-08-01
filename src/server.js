@@ -14,10 +14,10 @@ const port = process.env.PORT || 8080;
 const app = express();
 
 
-app.use(express.static('../dist/SaaS'));
+app.use(express.static('../dist/rb-front'));
 app.set ('view engine', 'pug');
 app.get("*", (req, res) => {
-    res.sendFile("index.html", {root: '../dist/SaaS'});
+    res.sendFile("index.html", {root: '../dist/rb-front'});
 });
 
 app.listen (port, () => {
