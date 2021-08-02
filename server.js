@@ -3,6 +3,8 @@
 // Full tutorial on how to deploy an Angular application on heroku
 // https://www.javaguides.net/2020/11/how-to-deploy-angular-application-to-heroku.html
 
+// https://rb-front.herokuapp.com/home
+
 function requireHTTPS(req, res, next) {
     // The 'x-forwarded-proto' check is for Heroku
     if (!req.secure && req.get('x-forwarded-proto') !== 'https') {
